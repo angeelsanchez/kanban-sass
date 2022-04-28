@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  pad: 0px; }
+
+main {
+  background-image: url("https://source.unsplash.com/EVQH70oYYNM");
+  background-size: cover;
+  overflow-y: auto;
+  height: 100vh;
+  padding: 40px; }
+  main h1 {
+    color: white;
+    background-color: rgba(17, 117, 162, 0.53);
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+    display: block; }
+
+#kanban .column {
+  background-color: rgba(255, 255, 255, 0.603);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  float: left;
+  width: calc(100% / 5 - 20px); }
+  #kanban .column h2 {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  #kanban .column .card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    border: solid 1px #c7c7c7;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 15px;
+    margin-right: auto;
+    margin-left: auto; }
+    #kanban .column .card:hover {
+      color: white;
+      background-color: rgba(12, 127, 180, 0.726);
+      cursor: pointer; }
+      #kanban .column .card:hover .cross {
+        background-color: black; }
+      #kanban .column .card:hover .tags .tag {
+        color: rgba(12, 127, 180, 0.726); }
+    #kanban .column .card .cross {
+      background-color: red;
+      color: white;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      float: right;
+      text-align: center; }
+    #kanban .column .card h3 {
+      clear: both;
+      font-size: 15px; }
+    #kanban .column .card .tags {
+      overflow: hidden; }
+      #kanban .column .card .tags .tag {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        color: white;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+        margin-bottom: 10px; }
+      #kanban .column .card .tags .front {
+        background-color: limegreen;
+        margin-left: 0px; }
+      #kanban .column .card .tags .back {
+        background-color: red; }
+      #kanban .column .card .tags .device {
+        background-color: gold; }
+  #kanban .column p {
+    margin-top: 10px;
+    margin-bottom: 20px; }
+
+/*# sourceMappingURL=main.css.map */
